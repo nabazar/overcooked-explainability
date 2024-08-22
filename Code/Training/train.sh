@@ -14,5 +14,5 @@ EOF
 # If we have all the parameters, we can start the training
 else
     echo "Start Training of Agents ego$1 and alt$1"
-    python3 /content/overcooked-explainability/Code/Training/PantheonRL/trainer.py OvercookedMultiEnv-v0 PPO PPO --env-config '{"layout_name":"'$2'"}' --ego-save /content/overcooked-explainability/Code/Training/PantheonRL/models/ego$1 --alt-save /content/overcooked-explainability/Code/Training/PantheonRL/models/alt$1 -t $3
+    python3 /content/PantheonRL/trainer.py OvercookedMultiEnv-v0 PPO PPO --env-config '{"layout_name":"'$2'"}' --ego-save /content//PantheonRL/models/ego$1 --alt-save /content/PantheonRL/models/alt$1 -t $3
 fi
